@@ -19,7 +19,6 @@ class TweetProcessor(object):
             for token in finalTokens:
                 if token == 'rt':
                     finalTokens.remove(token)
-            print finalTokens
             if len(finalTokens) >= 1: 
                 tweetList.append(Tweet(text,finalTokens))
         return tweetList
